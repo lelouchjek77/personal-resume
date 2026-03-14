@@ -258,7 +258,7 @@
                 <span>C#</span>
                 <span>VB.NET</span>
                 <span>Java (Struts)</span>
-                <span>Node.js (Basic)</span>
+                <span>Node.js</span>
             </div>
         </div>
 
@@ -268,6 +268,7 @@
                 <span>Laravel</span>
                 <span>React.js</span>
                 <span>Vue.js</span>
+                <span>Typescript</span>
                 <span>jQuery</span>
                 <span>WordPress</span>
             </div>
@@ -290,8 +291,10 @@
                 <span>Git</span>
                 <span>Github</span>
                 <span>Open AI</span>
+                <span>Docker</span>
                 <span>FileZilla</span>
                 <span>REST APIs</span>
+                <span>AWS</span>
                 <span>Linux Server Deployment</span>
             </div>
         </div>

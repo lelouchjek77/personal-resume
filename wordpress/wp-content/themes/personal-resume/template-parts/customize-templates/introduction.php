@@ -213,7 +213,7 @@
         Full-stack Web Developer with over <span class="highlight">5 years of professional experience</span>
         developing and maintaining web applications. Highly experienced in
         <span class="tech">PHP</span> and modern JavaScript frameworks including
-        <span class="tech">Laravel</span>, <span class="tech">Vue.js</span>,
+        <span class="tech">Laravel</span>, <span class="tech">Vue.js</span>, <span class="tech">Typescript</span>, 
         <span class="tech">React.js</span>, <span class="tech">WordPress</span>, and
         <span class="tech">jQuery</span>.
     </p>
