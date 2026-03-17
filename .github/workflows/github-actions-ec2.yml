@@ -28,8 +28,8 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            sudo apt-get -y update
-            sudo apt-get install -y apache2
+            sudo dnf -y update
+            sudo dnf install -y apache2
             sudo systemctl start apache2
             sudo systemctl enable apache2
             cd /home/ec2-user
