@@ -7,18 +7,6 @@
         background:#f3f4f6;
    }
 
-   /* HEADER IMAGE ANIMATION */
-   .header img {
-        width: 100%;
-        background-size: cover;
-        background-position: center;
-        height: 400px;
-
-        opacity:0;
-        transform:scale(1.05);
-        animation: headerFade 1.5s ease forwards;
-   }
-
    .skills-section {
         max-width: 900px;
         margin: 40px auto;
@@ -124,106 +112,9 @@
             transform:translateY(0);
         }
     }
-
-
-/* HERO SECTION */
-.hero{
-    position:relative;
-    width:100%;
-    height:420px;
-    overflow:hidden;
-}
-
-/* BACKGROUND IMAGE FIX */
-.hero-bg{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    object-position:center 25%;
-}
-
-/* DARK OVERLAY */
-.hero::after{
-    content:"";
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,0.45);
-}
-
-/* TEXT CONTENT */
-.hero-content{
-    position:absolute;
-    top: 45%;
-    left:50%;
-    transform:translate(-50%, -50%);
-    text-align:center;
-    color:white;
-    z-index:2;
-
-    opacity:0;
-    animation:fadeUp 1s ease forwards;
-}
-
-.hero-content h1{
-    font-size:42px;
-    margin-bottom:10px;
-    color:#ffffff;
-}
-
-.hero-content p{
-    font-size:18px;
-    letter-spacing:1px;
-}
-
-/* PROFILE IMAGE */
-.hero-profile{
-    position:absolute;
-    bottom:25px;
-    left:50%;
-    transform:translateX(-50%);
-    z-index:3;
-}
-
-.hero-profile img{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    border:5px solid white;
-    object-fit:cover;
-    background:white;
-
-    opacity:0;
-    animation:profileFade 1s ease forwards;
-    animation-delay:.5s;
-}
-
-@keyframes profileFade{
-    from{
-        opacity:0;
-        transform:translateY(30px);
-    }
-    to{
-        opacity:1;
-        transform:translateY(0);
-    }
-}
-
-/* ANIMATION */
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translate(-50%, -30%);
-    }
-    to{
-        opacity:1;
-        transform:translate(-50%, -50%);
-    }
-}
-
 </style>
+
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/profile-hero.css">
 
 <!-- HERO HEADER -->
 <div class="hero">
