@@ -33,7 +33,7 @@ jobs:
             sudo dnf install -y apache2
             sudo systemctl start apache2
             sudo systemctl enable apache2
-            sudo chown -R ec2-user:ec2-user /var/www/html/personal-resume
-            sudo chmod -R 775 /var/www/html/personal-resume
+            sudo chown -R ec2-user:ec2-user ${{ secrets.TARGET_DIR }}
+            sudo chmod -R 775 ${{ secrets.TARGET_DIR }}
             cd ${{ secrets.TARGET_DIR }}
             ls -la
