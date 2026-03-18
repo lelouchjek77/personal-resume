@@ -62,7 +62,7 @@
 
     <!-- HERO TEXT -->
     <div class="hero-content">
-        <h1>Hi, I'm Jericho TEST</h1>
+        <h1>Hi, I'm Jericho DEPLOYED</h1>
         <p>Full-Stack Web Developer</p>
     </div>
 
