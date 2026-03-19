@@ -35,4 +35,4 @@ do_action( 'personal_cv_resume_site_header');
 ?>
 
 
-<div id="content" class="site-content"  >
+<div id="content" class="<?php echo is_404() ? '' : 'site-content'; ?>">

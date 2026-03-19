@@ -69,6 +69,7 @@ class personal_cv_resume_header_layout{
 	* @return $html
 	*/
 	function site_header_layout(){
+		if( is_404() ) return
 		?>
 		<div id="aside-nav-wrapper" class="fixed">
 			<button class="side-bar-icon" id="sidebar-actions-header">
