@@ -10,51 +10,24 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<div style="text-align:center; padding:80px 20px; max-width:800px; margin:auto;">
+    
+    <h1 style="font-size:72px; margin-bottom:10px;">404</h1>
+    
+    <h2 style="font-size:28px; margin-bottom:20px;">
+        Oops! Page not found.
+    </h2>
+    
+    <p style="color:#666; font-size:18px; margin-bottom:30px;">
+        The page you’re looking for doesn’t exist, may have been moved, or the URL might be incorrect.
+    </p>
 
-		<section class="error-404 not-found">
-			<header class="page-header">
-				<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'personal-cv-resume' ); ?></h1>
-			</header><!-- .page-header -->
+    <!-- Buttons -->
+    <div style="margin-bottom:40px;">
+        <a href="<?php echo home_url(); ?>" style="padding:12px 24px; background:#0073aa; color:#fff; text-decoration:none; border-radius:5px; margin-right:10px;">
+            Go to Homepage
+        </a>
+    </div>
+</div>
 
-			<div class="page-content">
-				<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'personal-cv-resume' ); ?></p>
-
-					<?php
-					get_search_form();
-
-					the_widget( 'WP_Widget_Recent_Posts' );
-					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'personal-cv-resume' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories(
-								array(
-									'orderby'    => 'count',
-									'order'      => 'DESC',
-									'show_count' => 1,
-									'title_li'   => '',
-									'number'     => 10,
-								)
-							);
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$personal_cv_resume_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'personal-cv-resume' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$personal_cv_resume_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
-			</div><!-- .page-content -->
-		</section><!-- .error-404 -->
-
-	</main><!-- #main -->
-
-<?php
-get_footer();
+<?php get_footer(); ?>
