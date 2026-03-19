@@ -37,8 +37,8 @@ define( 'DB_CHARSET', 'utf8mb4' );
 /** The database collate type. Don't change this if in doubt. */
 define( 'DB_COLLATE', '' );
 
-define('WP_HOME', 'http://jerichoresume.xyz');
-define('WP_SITEURL', 'http://jerichoresume.xyz');
+define('WP_HOME', 'https://jerichoresume.xyz');
+define('WP_SITEURL', 'https://jerichoresume.xyz');
 
 /**#@+
  * Authentication unique keys and salts.
@@ -92,7 +92,10 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-
+define('FORCE_SSL_ADMIN', true);
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] == 'https') {
+    $_SERVER['HTTPS'] = 'on';
+}
 
 /* That's all, stop editing! Happy publishing. */
 
