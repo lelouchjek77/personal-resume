@@ -184,6 +184,9 @@
                 <span>Open AI</span>
                 <span>FileZilla</span>
                 <span>REST APIs</span>
+                <span>AWS</span>
+                <span>Postman</span>
+                <span>VSCode</span>
                 <span>Linux Server Deployment</span>
             </div>
         </div>
