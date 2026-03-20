@@ -88,7 +88,7 @@
         Strong background in <span class="highlight">backend development</span>,
         <span class="highlight">database management</span>, and
         <span class="highlight">system debugging</span>. Also experienced in desktop
-        application development using <span class="tech">C#</span> and
+        application development using <span class="tech">C#</span>,<span class="tech">.NET Framework</span>and
         <span class="tech">VB.NET</span>.
     </p>
 
